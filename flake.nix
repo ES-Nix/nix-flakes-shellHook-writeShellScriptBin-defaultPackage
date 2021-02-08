@@ -39,26 +39,18 @@
           '';
       in
       {
-        packages.mywrapper = import ./wrapper.nix {
-          pkgs = pkgs;
-        };
-        defaultPackage = self.packages.${system}.mywrapper;
+        #packages.mywrapper = import ./wrapper.nix {
+        #  pkgs = pkgs;
+        #};
+        #defaultPackage = self.packages.${system}.mywrapper;
 
         devShell = pkgs.mkShell {
           buildInputs = with pkgs; [
-            self.defaultPackage.${system}
 
-            #self.${system}.inputs.podman-rootless
-           # Not trow error, but podman does not work
-           #self.inputs.podman-rootless
-           #self.inputs.podman-rootless.defaultPackage.${system}
-           #self.inputs.podman-rootless.${system}.defaultPackage
+            # Why does not work?
+            #podman-rootless.packages.${system}.mypodman
 
-           #self.inputs.podman-rootless.${system}
-           #self.inputs.podman-rootless.x86_64-linux
-
-            #self.inputs.${system}.podman-rootless
-            #self.inputs.x86_64-linux.podman-rootless
+            podman-rootless.defaultPackage.${system}
 
             testScriptInFlake
             sometoolSetupScript
@@ -69,7 +61,9 @@
             #echo "Entering the nix devShell"
             test_script_in_flake
             sometool-setup-script
-            test_script
+            hello
+            podman-setup-script
+            podman-capabilities
           '';
         };
       });

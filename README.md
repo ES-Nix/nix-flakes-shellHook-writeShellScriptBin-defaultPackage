@@ -4,3 +4,11 @@ Example of nix flakes shellHook writeShellScriptBin defaultPackage all together
 
 First relevant commit:
 `git checkout bec1cc291b192306388af7521fedb2ba37728bb7`
+
+
+Really cool state, podman works: `git checkout bec1cc291b192306388af7521fedb2ba37728bb7`
+
+```
+git clone https://github.com/ES-Nix/nix-flakes-shellHook-writeShellScriptBin-defaultPackage.git
+cd nix-flakes-shellHook-writeShellScriptBin-defaultPackage
+```
