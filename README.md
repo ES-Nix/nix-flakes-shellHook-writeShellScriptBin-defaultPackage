@@ -3,4 +3,4 @@ Example of nix flakes shellHook writeShellScriptBin defaultPackage all together
 
 
 First relevant commit:
-`git chechout `
+`git checkout bec1cc291b192306388af7521fedb2ba37728bb7`
