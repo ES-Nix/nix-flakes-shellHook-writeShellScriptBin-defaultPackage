@@ -58,6 +58,7 @@
             hello.defaultPackage.${system}
           ];
           shellHook = ''
+            export TMPDIR=/tmp
             #echo "Entering the nix devShell"
             test_script_in_flake
             sometool-setup-script
