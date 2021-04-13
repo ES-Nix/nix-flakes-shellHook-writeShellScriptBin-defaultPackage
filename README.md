@@ -14,3 +14,8 @@ Really cool state, podman works: `git checkout 9260e7ed15c91cc35c02bbdec1b1bff0c
 git clone https://github.com/ES-Nix/nix-flakes-shellHook-writeShellScriptBin-defaultPackage.git
 cd nix-flakes-shellHook-writeShellScriptBin-defaultPackage
 ```
+
+nix \
+develop \
+github:ES-Nix/nix-flakes-shellHook-writeShellScriptBin-defaultPackage/82819f7c79048a4f4b2ec1f4c4631e837d6af6bb
+
