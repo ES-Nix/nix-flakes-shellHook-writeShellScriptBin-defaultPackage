@@ -39,7 +39,7 @@
             # TODO: document why this.
             export TMPDIR=/tmp
 
-            echo 'Entering the nix + flake devShell example!"
+            echo 'Entering the nix + flake devShell example!'
 
             test_script_in_flake
             sometool-setup-script
