@@ -15,7 +15,9 @@ git clone https://github.com/ES-Nix/nix-flakes-shellHook-writeShellScriptBin-def
 cd nix-flakes-shellHook-writeShellScriptBin-defaultPackage
 ```
 
+```
 nix \
-develop \
+shell \
 github:ES-Nix/nix-flakes-shellHook-writeShellScriptBin-defaultPackage/3740702cc56fa1f6fe67b472af351afd93719ff2
+```
 
