@@ -17,5 +17,5 @@ cd nix-flakes-shellHook-writeShellScriptBin-defaultPackage
 
 nix \
 develop \
-github:ES-Nix/nix-flakes-shellHook-writeShellScriptBin-defaultPackage/82819f7c79048a4f4b2ec1f4c4631e837d6af6bb
+github:ES-Nix/nix-flakes-shellHook-writeShellScriptBin-defaultPackage/3740702cc56fa1f6fe67b472af351afd93719ff2
 
