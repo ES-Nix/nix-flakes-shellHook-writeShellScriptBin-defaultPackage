@@ -17,7 +17,20 @@ cd nix-flakes-shellHook-writeShellScriptBin-defaultPackage
 
 ```
 nix \
-shell \
-github:ES-Nix/nix-flakes-shellHook-writeShellScriptBin-defaultPackage/3740702cc56fa1f6fe67b472af351afd93719ff2
+develop \
+github:ES-Nix/nix-flakes-shellHook-writeShellScriptBin-defaultPackage/5e43d777ac2de9987a462de6cf067fe73d898da6
+```
+
+```
+nix \
+develop \
+github:ES-Nix/nix-flakes-shellHook-writeShellScriptBin-defaultPackage/ \
+--command \
+podman \
+run \
+-it \
+alpine:3.13.0 \
+sh \
+-c 'uname --all'
 ```
 
