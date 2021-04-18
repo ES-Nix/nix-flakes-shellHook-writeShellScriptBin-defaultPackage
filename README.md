@@ -24,13 +24,14 @@ github:ES-Nix/nix-flakes-shellHook-writeShellScriptBin-defaultPackage/5e43d777ac
 ```
 nix \
 develop \
-github:ES-Nix/nix-flakes-shellHook-writeShellScriptBin-defaultPackage/ \
+github:ES-Nix/nix-flakes-shellHook-writeShellScriptBin-defaultPackage/65e9e5a64e3cc9096c78c452b51cc234aa36c24f \
 --command \
 podman \
 run \
--it \
+--interactive=true \
+--tty=true \
 alpine:3.13.0 \
 sh \
--c 'uname --all'
+-c 'uname --all && apk add --no-cache git && git init'
 ```
 
